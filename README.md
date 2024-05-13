@@ -1,1 +1,4 @@
-# teams-notify-on-review-for-wordpress
+# Teams Notify on Review & Publish, For WordPress
+WordPress上で投稿がレビュー待ち、もしくは公開状態になった際にTeamsにWebhookを用いて通知を飛ばすだけのプラグインです  
+そのうちWordPress公式レポジトリに暇があれば載せます。  
+取り急ぎ入れたい方はこのレポジトリのzipファイルを緑のCodeボタン→Download ZIPでダウンロードし、ZIPファイル経由でプラグインをインストールしてください
