@@ -48,6 +48,9 @@ function twor_options_page() {
 
 // 実際にWebhookを送るやつ
 function twor_send_teams_webhook_notification( $new_status, $old_status, $post ) {
+    if ( !in_array($post->post_type, ['post', 'page']) ) {
+        return;
+    }
     if ( $new_status == 'pending' && $old_status != 'pending' ) {
         $title = 'レビュー待ち投稿のお知らせ';
         $webhook_url = get_option('twor_review_webhook_url');
